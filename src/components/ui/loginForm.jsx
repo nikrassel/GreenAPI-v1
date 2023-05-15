@@ -32,6 +32,7 @@ const LoginForm = () => {
         if (!isValid) return
         localStorageService.setInstances(data.idInstance, data.apiTokenInstance)
         navigate("/chat")
+        window.location.reload()
     }
     useEffect(() => {
         validate()

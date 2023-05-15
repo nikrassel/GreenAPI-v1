@@ -74,6 +74,7 @@ const TestGreen = () => {
     function handleLogOut() {
         localStorageService.removeInstanceData()
         navigate("/")
+        window.location.reload()
     }
     function handleEnter(event) {
         if (event.code === "Enter" || event.code === "NumpadEnter") {
